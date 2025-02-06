@@ -42,8 +42,8 @@ const AboutMe = () => {
 						Hi there, I'm <span className="section-name1">Joseph!</span>
 					</h2>
 					<p className="about-me-description">
-						I'm a passionate content management professional specializing in
-						managing end-to-end projects. With 6 years of experience in the
+						I'm a passionate technical product editor and manager specializing in
+						handling end-to-end technical projects. With more than 6 years of experience in the
 						publishing industry and exposure to domains like software
 						development, cybersecurity, and data science, I bring a unique
 						perspective to solving customer problems and innovating new ideas.

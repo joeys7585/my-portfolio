@@ -41,7 +41,7 @@ const Navbar = () => {
 					<FaGithub />
 				</a>
 				<a
-					href="https://drive.google.com/file/d/1DYJQ8sLtjWZzKjHkty-C-YrKN8ptrjO6/view?usp=sharing"
+					href="https://drive.google.com/file/d/1xznQsIGbv5zIzdbsBXSIeb13rdleFb7d/view?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
 				>

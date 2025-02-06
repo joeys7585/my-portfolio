@@ -1,14 +1,14 @@
 import React from "react";
-import { FaCode, FaDeezer, FaFolderOpen, FaShieldAlt } from "react-icons/fa"; // Example icons
+import { FaCode, FaBook, FaFolderOpen, FaShieldAlt } from "react-icons/fa"; // Example icons
 import "./Skills.css";
 import { motion } from "framer-motion";
 
 const skills = [
 	{
-		icon: <FaDeezer />,
-		title: "Program Management",
+		icon: <FaBook />,
+		title: "Technical Writing",
 		description:
-			"Experienced program manager with 6+ years of coordinating with cross-functional teams, optimizing workflows, and delivering 30% faster project timelines through process improvements and agile methodologies.",
+			"Highly skilled at translating complex technical concepts into user-friendly language with the help of content engineering, visual aids, and more.",
 	},
 	{
 		icon: <FaShieldAlt />,
