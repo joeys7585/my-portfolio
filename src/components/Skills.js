@@ -1,34 +1,60 @@
 import React from "react";
-import { FaCode, FaBook, FaFolderOpen, FaShieldAlt } from "react-icons/fa"; // Example icons
+import { FaHeadset, FaTools, FaServer, FaShieldAlt, FaCode, FaTerminal, FaUserShield, FaFileAlt } from "react-icons/fa"; // Example icons
 import "./Skills.css";
 import { motion } from "framer-motion";
 
 const skills = [
 	{
-		icon: <FaBook />,
-		title: "Technical Writing",
+		icon: <FaHeadset />,
+		title: "Technical Support & Troubleshooting",
 		description:
-			"Highly skilled at translating complex technical concepts into user-friendly language with the help of content engineering, visual aids, and more.",
+			"Proficient in diagnosing and resolving software, application, and system issues, ensuring minimal downtime and optimal performance for end users.",
+	},
+	{
+		icon: <FaTools />,
+		title: "Incident Management",
+		description:
+			"Experienced in identifying, logging, and resolving technical incidents efficiently, leveraging ITIL best practices to enhance support workflows.",
+	},
+	{
+		icon: <FaServer />,
+		title: "Application Support",
+		description:
+			"Skilled in maintaining, configuring, and troubleshooting enterprise applications, collaborating with development and infrastructure teams to ensure seamless operation.",
 	},
 	{
 		icon: <FaShieldAlt />,
-		title: "Quality Assurance",
+		title: "System Monitoring & Security",
 		description:
-			"Skilled in enhancing content quality and leveraging AI to create tools to reduce editing time by 25% and ensuring alignment with market trends for timely, high-quality deliverables.",
-	},
-	{
-		icon: <FaFolderOpen />,
-		title: "Product Management",
-		description:
-			"Experience with driving new product workflows, optimizing development processes, and delivering market-aligned content solutions that improved efficiency by 30%.",
+			"Experienced in monitoring application and system performance, proactively identifying issues, and implementing security best practices to protect data integrity.",
 	},
 	{
 		icon: <FaCode />,
-		title: "Technical Expertise",
+		title: "Scripting & Automation",
 		description:
-			"Deep understanding of various technologies, including software development, AI, and LLMs, to drive innovation and deliver cutting-edge solutions that meet customer needs.",
+			"Proficient in using scripting languages (e.g., PowerShell, Python, Bash) to automate repetitive tasks, improve system efficiency, and reduce manual workload.",
+	},
+	{
+		icon: <FaTerminal />,
+		title: "IT Automation & Scripting",
+		description:
+			"Proficient in automating IT tasks using PowerShell, Python, and VBA, streamlining workflows, reducing manual effort, and improving efficiency.",
+	},
+	{
+		icon: <FaUserShield />,
+		title: "Cybersecurity & Threat Analysis",
+		description:
+			"Knowledge of security best practices, IP tracking, and threat intelligence tools like AbuseIPDB and VirusTotal to enhance IT security measures.",
+	},
+	{
+		icon: <FaFileAlt />,
+		title: "Technical Documentation & Process Improvement",
+		description:
+			"Experienced in creating clear, structured documentation for IT processes, automation scripts, and troubleshooting guides to enhance knowledge sharing and support efficiency.",
 	},
 ];
+
+
 
 const Skills = () => {
 	return (

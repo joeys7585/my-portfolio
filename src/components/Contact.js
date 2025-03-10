@@ -16,7 +16,7 @@ const Contact = () => {
 			<h2 className="section-title">Contact Me</h2>
 			<div className="contact-content">
 				<p className="contact-name">Joseph Sunil</p>
-				<p className="contact-role">Technical Editor and Product Manager</p>
+				<p className="contact-role">Technical Support and Cybersecurity Enthusiast</p>
 				<p className="contact-paragraph">
 					I am passionate about technology, development, and problem-solving.
 					Feel free to reach out to me for collaborations, opportunities, or

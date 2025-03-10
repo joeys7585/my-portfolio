@@ -4,31 +4,27 @@ import { motion } from "framer-motion"; // Import CSS for styling
 
 const projects = [
 	{
-		title: "Maa's Cafe",
+		title: "Windows and Active Directory Home Lab",
 		description:
-			"Delivering a seamless and personalized food experience, connecting users to their favorite meals with ease and convenience.",
-		github: "https://maascafe.netlify.app/", // GitHub link if available
+			"Simulated real-world IT support scenarios using Windows, Windows Server, and Kali Linux VMs. Configured Active Directory, Group Policy, and automated bulk user creation using PowerShell.",
 	},
 	{
-		title: "Dental Wellness",
+		title: "IP Tracking API using JS and Postman",
 		description:
-			"Empowering patients with easy access to trusted dental services, informative resources, and a seamless booking experience all in one place.",
-		github: "https://dentalwellnessbydrceleste.netlify.app/",
+			"Developed an API integrating AbuseIPDB, VirusTotal, and IPInfo for IP geolocation and security insights. Automated data retrieval using Python scripts and documented API usage with Postman.",
 	},
 	{
-		title: "My Portfolio",
+		title: "Editorial Macros using VBA",
 		description:
-			"Showcasing my skills, projects, and passion for technology through an interactive and visually engaging online portfolio.",
-		github: "https://github.com/yourusername/project3",
+			"Designed VBA macros for MS Word and Excel to streamline editorial workflows, reducing repetitive tasks like importing templates and removing junk characters, achieving a 20% faster turnaround time.",
 	},
 	{
-		title: "My Top Product",
+		title: "Data Analysis using PostgreSQL and Grafana",
 		description:
-			"Bringing insightful ideas to life through thoughtful editing and collaboration, creating a compelling read for curious minds.",
-		github:
-			"https://www.packtpub.com/en-us/product/data-engineering-with-dbt-9781803246284",
+			"Utilized PostgreSQL for data analysis and Grafana for visualization, enabling informed decision-making. Leveraged LLMs to generate synthetic data for real-world testing scenarios.",
 	},
 ];
+
 
 const Projects = () => {
 	return (
@@ -46,16 +42,6 @@ const Projects = () => {
 					<div className="project-card" key={index}>
 						<h3 className="project-title">{project.title}</h3>
 						<p className="project-description">{project.description}</p>
-						<div className="project-links">
-							<a
-								href={project.github}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="project-link"
-							>
-								Project Link
-							</a>
-						</div>
 					</div>
 				))}
 			</div>

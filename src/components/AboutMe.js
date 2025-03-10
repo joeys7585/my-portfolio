@@ -42,14 +42,10 @@ const AboutMe = () => {
 						Hi there, I'm <span className="section-name1">Joseph!</span>
 					</h2>
 					<p className="about-me-description">
-						I'm a passionate technical product editor and manager specializing in
-						handling end-to-end technical projects. With more than 6 years of experience in the
-						publishing industry and exposure to domains like software
-						development, cybersecurity, and data science, I bring a unique
-						perspective to solving customer problems and innovating new ideas.
+						I'm a Seasoned IT professional skilled in troubleshooting software, IT support, and system management. I am experienced In Windows Server, Active Directory, and virtualization using VirtualBox. I am also adept at process automation using PowerShell, VBA, and Python. I bring a proven ability in providing end-user support and collaborating with global stakeholders to resolve technical issues.
 					</p>
 					<p className="about-me-highlight">
-						I’m currently learning web development and exploring the latest
+						I’m currently working on my AZ-104 certification and exploring the latest
 						trends in technology. When I’m not coding, you’ll find me playing
 						badminton or volleyball.
 					</p>
