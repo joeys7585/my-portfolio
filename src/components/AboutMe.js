@@ -42,10 +42,10 @@ const AboutMe = () => {
 						Hi there, I'm <span className="section-name1">Joseph!</span>
 					</h2>
 					<p className="about-me-description">
-						I'm a Seasoned IT professional skilled in troubleshooting software, IT support, and system management. I am experienced In Windows Server, Active Directory, and virtualization using VirtualBox. I am also adept at process automation using PowerShell, VBA, and Python. I bring a proven ability in providing end-user support and collaborating with global stakeholders to resolve technical issues.
+					Former Senior Technical Editor & Manual Tester @ Packt Publishing with 6+ YOE | Selenium | Python | SQL | API Testing | Technical Documentation | Adept at automating testing workflows and optimizing processes with VBA and Python
 					</p>
 					<p className="about-me-highlight">
-						I’m currently working on my AZ-104 certification and exploring the latest
+						I’m currently brushing up on Playwright and exploring the latest
 						trends in technology. When I’m not coding, you’ll find me playing
 						badminton or volleyball.
 					</p>
