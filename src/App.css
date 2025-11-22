@@ -1,45 +1,116 @@
-.App {
-	text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --lakers-purple: #552583;
+  --lakers-gold: #FDB927;
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --card-radius: 16px;
+  --card-padding: 24px;
+  --gap: 16px;
 }
 
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
-}
-
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
-.App-link {
-	color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-/* Apply the font to the whole website */
 body {
-	font-family: "Montserrat", sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.card-title,
+.project-title,
+.category-title,
+strong {
+  font-family: "Black Ops One", system-ui;
+  letter-spacing: 1px;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: var(--gap);
+  grid-template-areas:
+    "profile profile social social"
+    "profile profile skills skills"
+    "projects projects projects projects"
+    "contact contact contact contact";
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "profile"
+      "social"
+      "skills"
+      "projects"
+      "contact";
+  }
+}
+
+.bento-card {
+  background-color: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.bento-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent 0%, rgba(253, 185, 39, 0.05) 50%, transparent 100%);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  pointer-events: none;
+}
+
+.bento-card:hover::before {
+  transform: translateX(100%);
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(85, 37, 131, 0.4), 0 0 30px rgba(253, 185, 39, 0.2);
+  border-color: var(--lakers-gold);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lakers-purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--lakers-gold);
 }

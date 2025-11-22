@@ -1,66 +1,38 @@
-body {
-	background-color: var(--text-light);
+.contact-card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, var(--lakers-purple) 0%, #2a1242 100%);
+	border: none;
 }
-.contact-section {
-	padding: 60px 20px;
-	margin: 100px 60px 0 60px;
-	background-color: var(--primary-purple);
-	color: var(--text-light);
+
+.contact-content-mini {
 	text-align: center;
 }
 
-.section-title {
-	font-size: 2.5rem;
-	margin-bottom: 30px;
-	color: var(--text-light);
-	text-transform: uppercase;
-}
-
-.contact-content {
-	margin-bottom: 30px;
-}
-
-.contact-name {
-	font-size: 2rem;
-	font-weight: bold;
-	color: var(--accent-gold);
-}
-
-.contact-role {
+.contact-content-mini h3 {
+	color: #fff;
 	font-size: 1.5rem;
-	color: var(--text-light);
-	margin-bottom: 10px;
+	margin: 0 0 0.5rem 0;
 }
 
-.contact-paragraph {
-	font-size: 1rem;
-	line-height: 1.5;
-	color: var(--text-light);
-	margin-bottom: 30px;
-	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
+.contact-content-mini p {
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 1.5rem;
 }
 
-.contact-icons {
-	display: flex;
-	justify-content: center;
-	gap: 20px;
+.contact-btn {
+	display: inline-block;
+	background-color: var(--lakers-gold);
+	color: #000;
+	padding: 10px 24px;
+	border-radius: 30px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.contact-icon {
-	font-size: 2rem;
-	color: var(--accent-gold);
-	transition: transform 0.3s ease;
-}
-
-.contact-icon:hover {
-	transform: scale(1.2);
-	color: var(--text-light);
-}
-
-@media (max-width: 480px) {
-	.section-title {
-		font-size: 2rem;
-	}
+.contact-btn:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 12px rgba(253, 185, 39, 0.4);
 }

@@ -1,0 +1,121 @@
+{
+    "aboutMe": {
+        "name": "Joseph Sunil",
+        "role": "Technical Support & QA Engineer",
+        "status": "Available for work",
+        "imageAlt": "Joseph Sunil",
+        "description": [
+            "Former Senior Technical Editor & Manual Tester @ Packt Publishing with 6+ YOE. Specializing in <strong>Selenium, Python, SQL, and API Testing</strong>.",
+            "Adept at automating workflows and optimizing processes. Currently exploring Playwright and modern web tech."
+        ]
+    },
+    "skills": {
+        "title": "Skill Matrix",
+        "categories": [
+            {
+                "title": "Technical Skills",
+                "skills": [
+                    "Tech Support",
+                    "Incident Mgmt",
+                    "App Support",
+                    "Monitoring",
+                    "Cybersecurity",
+                    "Documentation"
+                ]
+            },
+            {
+                "title": "Tools & Platforms",
+                "skills": [
+                    "Active Directory",
+                    "Windows Server",
+                    "Kali Linux",
+                    "Postman",
+                    "Grafana",
+                    "PostgreSQL",
+                    "AbuseIPDB",
+                    "VirusTotal"
+                ]
+            },
+            {
+                "title": "Scripting & Automation",
+                "skills": [
+                    "Python",
+                    "PowerShell",
+                    "VBA",
+                    "Bash",
+                    "SQL"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projects",
+        "items": [
+            {
+                "title": "Windows & AD Home Lab",
+                "description": "Simulated IT support scenarios with Active Directory & Group Policy.",
+                "tags": [
+                    "Windows Server",
+                    "AD",
+                    "PowerShell"
+                ]
+            },
+            {
+                "title": "IP Tracking API",
+                "description": "Integrated AbuseIPDB & VirusTotal for IP geolocation & security.",
+                "tags": [
+                    "Python",
+                    "API",
+                    "Postman"
+                ]
+            },
+            {
+                "title": "Editorial Macros",
+                "description": "VBA macros for MS Word/Excel to streamline editorial workflows.",
+                "tags": [
+                    "VBA",
+                    "Automation",
+                    "Excel"
+                ]
+            },
+            {
+                "title": "Data Analysis",
+                "description": "PostgreSQL & Grafana for visualization and decision making.",
+                "tags": [
+                    "SQL",
+                    "Grafana",
+                    "Data"
+                ]
+            }
+        ]
+    },
+    "contact": {
+        "title": "Let's Work Together",
+        "description": "Open to opportunities in Technical Support, QA, and Automation.",
+        "buttonText": "Get in Touch",
+        "email": "suniljoseph765@gmail.com"
+    },
+    "radar": {
+        "axes": [
+            "Coding",
+            "Testing",
+            "Gaming",
+            "Badminton",
+            "Life"
+        ],
+        "data": [
+            0.9,
+            0.85,
+            0.95,
+            0.8,
+            1.0
+        ],
+        "tooltips": {
+            "Coding": "React, Python, JS, HTML/CSS",
+            "Testing": "Selenium, Manual, API, Postman",
+            "Gaming": "Dota 2, Valorant, CS, Apex Legends",
+            "Badminton": "Doubles, Smash, Drop Shots",
+            "Life": "Traveling, Music, Tech, Coffee"
+        }
+    }
+}

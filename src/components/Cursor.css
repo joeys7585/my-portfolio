@@ -1,0 +1,52 @@
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--lakers-gold);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    transition: width 0.2s, height 0.2s, background-color 0.2s, transform 0.2s;
+    transition-timing-function: ease-out;
+    mix-blend-mode: difference;
+}
+
+.cursor::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: var(--lakers-purple);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cursor--hidden {
+    opacity: 0;
+}
+
+.cursor--clicked {
+    transform: translate(-50%, -50%) scale(0.8);
+    background-color: rgba(253, 185, 39, 0.2);
+}
+
+.cursor--link-hovered {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: rgba(253, 185, 39, 0.1);
+    border-color: var(--lakers-purple);
+}
+
+/* Hide default cursor */
+body {
+    cursor: none;
+}
+
+a,
+button,
+.bento-card {
+    cursor: none;
+    /* Ensure elements don't show default cursor */
+}

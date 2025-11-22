@@ -1,51 +1,35 @@
 import React from "react";
 import "./Projects.css";
-import { motion } from "framer-motion"; // Import CSS for styling
-
-const projects = [
-	{
-		title: "Windows and Active Directory Home Lab",
-		description:
-			"Simulated real-world IT support scenarios using Windows, Windows Server, and Kali Linux VMs. Configured Active Directory, Group Policy, and automated bulk user creation using PowerShell.",
-	},
-	{
-		title: "IP Tracking API using JS and Postman",
-		description:
-			"Developed an API integrating AbuseIPDB, VirusTotal, and IPInfo for IP geolocation and security insights. Automated data retrieval using Python scripts and documented API usage with Postman.",
-	},
-	{
-		title: "Editorial Macros using VBA",
-		description:
-			"Designed VBA macros for MS Word and Excel to streamline editorial workflows, reducing repetitive tasks like importing templates and removing junk characters, achieving a 20% faster turnaround time.",
-	},
-	{
-		title: "Data Analysis using PostgreSQL and Grafana",
-		description:
-			"Utilized PostgreSQL for data analysis and Grafana for visualization, enabling informed decision-making. Leveraged LLMs to generate synthetic data for real-world testing scenarios.",
-	},
-];
-
+import { motion } from "framer-motion";
+import data from "../data.json";
 
 const Projects = () => {
+	const { projects } = data;
+
 	return (
-		<motion.section
-			id="projects"
-			className="projects-section"
-			initial={{ opacity: 0, y: 100 }}
+		<motion.div
+			className="bento-card projects-card"
+			style={{ gridArea: "projects" }}
+			initial={{ opacity: 0, y: 20 }}
 			whileInView={{ opacity: 1, y: 0 }}
-			transition={{ duration: 1 }}
+			transition={{ duration: 0.5, delay: 0.2 }}
 			viewport={{ once: true }}
 		>
-			<h2 className="section-name">My Projects</h2>
-			<div className="projects-grid">
-				{projects.map((project, index) => (
-					<div className="project-card" key={index}>
-						<h3 className="project-title">{project.title}</h3>
-						<p className="project-description">{project.description}</p>
+			<h3 className="card-title">{projects.title}</h3>
+			<div className="projects-grid-mini">
+				{projects.items.map((project, index) => (
+					<div className="project-item" key={index}>
+						<h4 className="project-title">{project.title}</h4>
+						<p className="project-desc">{project.description}</p>
+						<div className="project-tags">
+							{project.tags.map((tag, i) => (
+								<span key={i} className="tag">{tag}</span>
+							))}
+						</div>
 					</div>
 				))}
 			</div>
-		</motion.section>
+		</motion.div>
 	);
 };
 

@@ -1,127 +1,127 @@
 @import url(colors.css);
-.about-me-section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	padding: 60px 20px;
-	background-color: var(--text-light);
-}
 
-.about-me-container {
+.about-card {
 	display: flex;
 	flex-direction: row;
+	gap: 2rem;
 	align-items: center;
 	justify-content: space-between;
-	background: var(--primary-purple);
-	color: var(--text-light);
-	border-radius: 30px;
-	max-width: 1000px;
-	width: 100%;
-	padding: 20px;
 }
 
-.about-me-text {
+.about-top {
 	flex: 1;
-	text-align: left;
-	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
-.section-header {
-	font-size: 2rem;
-	margin-bottom: 20px;
-	width: 350px;
-	color: var(--accent-gold);
-	cursor: pointer;
-	overflow: hidden; /* Ensures the text is clipped during animation */
-	white-space: nowrap; /* Keeps text on one line */
-	border-right: 2px solid transparent; /* Adds the typing cursor effect */
-	transition: color 0.3s ease;
-	border-right: 2px solid var(--accent-gold); /* Visible cursor */
-	animation: typewriter 3.5s steps(22, end) 1 normal,
-		blink 0.75s step-end infinite;
-}
-
-@keyframes typewriter {
-	from {
-		width: 0;
-	}
-	to {
-		width: 350px;
-	}
-}
-
-/* Keyframes for the blinking cursor */
-@keyframes blink {
-	50% {
-		border-color: transparent;
-	}
-}
-
-.about-me-description {
-	font-size: 1.2rem;
-	line-height: 1.8;
-	margin-bottom: 15px;
-}
-
-.about-me-highlight {
-	font-size: 1.2rem;
-	font-style: italic;
-	color: var(--accent-gold);
-}
-
-.about-me-image {
+.about-radar {
+	flex: 0 0 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	perspective: 1000px; /* Defines the perspective for the 3D effect */
 }
 
-.about-me-image img {
-	width: 400px;
-	height: 400px;
+.about-header {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.image-container {
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid var(--lakers-gold);
+	flex-shrink: 0;
+}
+
+.image-container img {
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
-	border: 5px solid var(--accent-gold);
-	transition: transform 0.2s ease, box-shadow 0.3s ease;
-	transform-origin: center;
-	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.about-me-image img:hover {
-	box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
-}
-/* Responsive Styles */
-@media (max-width: 768px) {
-	.about-me-container {
-		flex-direction: column; /* Stack content vertically */
-		text-align: center;
-		padding: 20px;
-	}
-
-	.about-me-text {
-		margin: 0; /* Remove left margin */
-	}
-
-	.about-me-image img {
-		width: 300px;
-		height: 300px;
-	}
+.about-intro {
+	flex: 1;
 }
 
-@media (max-width: 480px) {
-	.section-header {
-		font-size: 1.5rem;
-		width: 270px; /* Adjust typewriter width */
+.about-intro h2 {
+	margin: 0;
+	font-size: 1.5rem;
+	color: var(--text-primary);
+	line-height: 1.2;
+}
+
+.role {
+	margin: 0.25rem 0 0.5rem;
+	color: var(--lakers-purple);
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.status-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: rgba(76, 175, 80, 0.1);
+	color: #4caf50;
+	padding: 4px 8px;
+	border-radius: 12px;
+	font-size: 0.75rem;
+	font-weight: 500;
+}
+
+.dot {
+	width: 6px;
+	height: 6px;
+	background-color: #4caf50;
+	border-radius: 50%;
+	animation: pulse 2s infinite;
+}
+
+.about-content {
+	color: var(--text-secondary);
+	line-height: 1.6;
+	font-size: 0.95rem;
+}
+
+.about-content p {
+	margin-bottom: 1rem;
+}
+
+.about-content p:last-child {
+	margin-bottom: 0;
+}
+
+.about-content strong {
+	color: var(--text-primary);
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 1;
 	}
 
-	.about-me-description {
-		font-size: 1rem;
-		line-height: 1.5;
+	50% {
+		opacity: 0.5;
 	}
 
-	.about-me-image img {
-		width: 250px;
-		height: 250px;
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Mobile Layout for About Card */
+@media (max-width: 900px) {
+	.about-card {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.about-radar {
+		align-self: center;
+		margin-top: 1rem;
 	}
 }
