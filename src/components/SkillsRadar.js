@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { motion, AnimatePresence, animate } from 'framer-motion';
 import data from "../data.json";
@@ -76,7 +76,7 @@ const SkillsRadar = () => {
                 const targetPos = getPoint(originalData[index], index);
 
                 // Bouncy Snap Back Animation
-                const controlsX = animate(currentPos.x, targetPos.x, {
+                animate(currentPos.x, targetPos.x, {
                     type: "spring",
                     stiffness: 600, // Higher stiffness for snap
                     damping: 10,    // Lower damping for bounce
@@ -89,7 +89,7 @@ const SkillsRadar = () => {
                     }
                 });
 
-                const controlsY = animate(currentPos.y, targetPos.y, {
+                animate(currentPos.y, targetPos.y, {
                     type: "spring",
                     stiffness: 600,
                     damping: 10,
